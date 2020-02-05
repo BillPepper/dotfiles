@@ -11,12 +11,6 @@ alias nupy_fe='afn_nupy; npm run dev'
 alias nupy_be='afn_nupy;pvenv; ./run.sh'
 alias nupy_wt='afn_nupy;npm run watch'
 
-alias prv_mbar='cd /home/mattes/Documents/Privat/python/MBar/'
-alias prv_dualmon='cd /home/mattes/Documents/Artfacts/practice_stuff/'
-alias prv_documents='cd /home/mattes/Douments/'
-alias prv_pictures='cd /home/mattes/pictures/'
-alias prv_downloads='cd /home/mattes/Downloads'
-
 # Administration
 alias adm_kbd_en='setxkbmap us'
 alias adm_kbd_de='setxkbmap de'
