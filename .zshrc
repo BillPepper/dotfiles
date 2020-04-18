@@ -4,6 +4,7 @@ export ZSH=/home/mattes/.oh-my-zsh
 ZSH_THEME="arrow"
 
 COMPLETION_WAITING_DOTS="true"
+plugins=(git)
 source $ZSH/oh-my-zsh.sh
 alias afn_nupy='export APP_ENV=config.DevelopmentConfig && cd /home/mattes/Documents/Artfacts/artfacts-nupy/'
 alias pvenv='. venv/bin/activate'
