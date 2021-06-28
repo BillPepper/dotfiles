@@ -15,8 +15,9 @@ alias lsdirsizes='du -sh *'
 # Set default editor
 export EDITOR=vim
 
-# QT Theme fix
+# Theme fixes
 export QT_QPA_PLATFORMTHEME="qt5ct"
+_JAVA_AWT_WM_NONREPARENTING=1
 
 # Setup ruby stuff
 export GEM_HOME="$HOME/gems"
