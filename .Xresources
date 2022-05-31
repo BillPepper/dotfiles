@@ -47,5 +47,5 @@ Xft.antialias:  true
 Xft.rgba:       rgb
 
 urxvt*transparent:true
-urxvt*shading:40
+urxvt*shading:20
 urxvt*scrollBar:false
