@@ -7,21 +7,16 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-# Administration
-alias lsdirsizes='du -sh *'
-
-#------------------------------------------------------------------------------
-
 # Set default editor
 export EDITOR=vim
 
 # Theme fixes
 export QT_QPA_PLATFORMTHEME="qt5ct"
-_JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 # Setup ruby stuff
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
+export GEM_HOME="$HOME/.gems"
+export PATH="$HOME/.gems/bin:$PATH"
 
 export LS_COLORS="di=34:ln=35:so=32:pi=33;40:ex=31:bd=31:cd=31:su=31:sg=31:tw=31:ow=31:"
 
@@ -29,6 +24,12 @@ export LS_COLORS="di=34:ln=35:so=32:pi=33;40:ex=31:bd=31:cd=31:su=31:sg=31:tw=31
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Setup shortcuts
+alias dev_projects="cd ~/Code/Projects/"
+alias vi_wanted="vi ~/Documents/Private/wanted.txt"
+alias vi_cook="vi ~/Documents/Private/cook.txt"
+alias vi_songs="vi ~/Documents/MusicStuff/songs_2021.txt"
 
 # ssh stuff
 SSH_ENV="$HOME/.ssh/environment"
@@ -51,3 +52,6 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+
+# java dev kit
+export PATH=/opt/jdk11/bin:$PATH
