@@ -45,9 +45,9 @@ window:
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+  padding:
+    x: 20
+    y: 20
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -61,7 +61,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  #decorations: full
+  # decorations: full
 
   # Background opacity
   #
@@ -192,8 +192,8 @@ window:
 colors:
   # Default colors
   primary:
-    background: '#111111'
-  #  foreground: '#c5c8c6'
+    background: '#222222'
+    # foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
     #
@@ -201,8 +201,8 @@ colors:
     # present. If the bright foreground color is not set, or
     # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
     # color will be used.
-    #dim_foreground: '#828482'
-    #bright_foreground: '#eaeaea'
+    # dim_foreground: '#828482'
+    # bright_foreground: '#eaeaea'
 
   # Cursor colors
   #
