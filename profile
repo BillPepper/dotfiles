@@ -17,11 +17,11 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 . "$HOME/.cargo/env"
 
-#disable monitor energy safe
-xset dpms 0 0 0
+# disable screens turning off after a while
+xset s off -dpms
 
 # setup the three monitors
-bash ~/.screenlayout/3x_2k.sh
+ bash ~/.pepper/screenlayout/3x_2k.sh
 
 # run status bar (time, resources, etc...)
 slstatus&
@@ -32,6 +32,18 @@ picom -f --experimental-backends&
 # set wallpaper
 feh --bg-fill ~/Pictures/Wallpapers/current.jpg
 
+# blue light filter
+redshift -t 6500:3000 -b 1.0:0.8&
+
+# use capslock as escape, clear lock on capslock
+xmodmap -e "keycode 66 = Escape"
+xmodmap -e "clear lock"
+
+# tray applications
+nm-applet&
+pa-applet&
+blueman-applet&
+
 # open default apps
 firefox&
-pulseeffects&
+
